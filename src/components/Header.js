@@ -72,7 +72,7 @@ function Header() {
         <div className={styles.second1}>
           <Link className={styles.title_image} to="/">
             <RiAuctionFill></RiAuctionFill>
-            <span className={styles.ssg}>싹</span>Bay
+            <span className={styles.ssg}>쓱</span>Bay
           </Link>
           <form onSubmit={handleSubmit} className={styles.searchBar}>
             <input
