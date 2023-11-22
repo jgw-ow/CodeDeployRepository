@@ -1,7 +1,7 @@
 import { Link, useNavigate, useLocation  } from "react-router-dom";
 import styles from "./Header.module.css";
 import { RiAuctionFill } from "react-icons/ri";
-import { useEffect, useState } from "react";
+import { useEffect, useState } from "react"; // eslint-disable-line no-unused-vars
 import {
   AiOutlineSearch,
   AiOutlineShoppingCart,
