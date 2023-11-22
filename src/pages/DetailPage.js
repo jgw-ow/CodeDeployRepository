@@ -25,7 +25,7 @@ function DetailPage() {
     e.preventDefault();
     console.log('입력한 입찰가:',price);
     console.log('이미 입찰된 가격:',data.price);
-    const parsedDataPrice = parseFloat(data.price);
+    const parsedDataPrice = parseFloat(data.price); // eslint-disable-line no-unused-vars
     
     // if(localStorage.getItem('userId')) {
     purchaseId = localStorage.getItem('userId')
