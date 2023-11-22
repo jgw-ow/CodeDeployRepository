@@ -13,7 +13,7 @@ function Header() {
   const isLogin = localStorage.getItem('token'); // 토큰이 존재하는지 확인
 
   const navigate = useNavigate();
-  const location = useLocation();
+  const location = useLocation(); // eslint-disable-line no-unused-vars
 
   const handleLogout = () => {
     // 로그아웃 시 localStorage의 토큰 제거
