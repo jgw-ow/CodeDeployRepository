@@ -19,7 +19,7 @@ function LoginPage() {
         return;
       } 
 
-      const response = await fetch(`http://100.24.43.31:5000//login`, {
+      const response = await fetch(`http://100.24.43.31:5000/login`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
