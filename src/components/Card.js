@@ -7,7 +7,7 @@ export default function Card({ cardInfo }) {
   const { name, title, price, time, img, id } = cardInfo; //eslint-disable-line no-unused-vars
   return (
     <div className={styles.cardContainer}>
-      <Link to={`http://localhost:3000/detail/${id}`}>
+      <Link to={`/detail/${id}`}>
         {/* {imageUrl && <img src={cardInfo.image} alt="Uploaded" />} */}
         <img className={styles.itemImg} src={`${cardInfo.image}`}  alt="itemImage" />
         <div>
