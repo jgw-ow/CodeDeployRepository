@@ -68,7 +68,7 @@ function SignupPage() {
   
         alert(`ID: ${userId}\nPWD1: ${userPwd1}\nPWD2: ${userPwd2}\nPHONE: ${userPhone}\nNICKNAME: ${userNickname}`);
         
-        const response = await fetch(`http://127.0.0.1:5000/login/signup`, {
+        const response = await fetch(`http://100.24.43.31:5000/login/signup`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'
