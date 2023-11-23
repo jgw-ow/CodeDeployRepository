@@ -43,6 +43,9 @@ jobs:
       if: steps.cache.outputs.cache-hit != 'true'
       run: npm install
       
+    - name: Install Axios
+      run: npm install axios
+      
     - name: npm build
       run: npm run build
 
