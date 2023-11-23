@@ -12,7 +12,7 @@ function DetailPage() {
 
   useEffect(() => {
     axios
-      .get(`http://100.24.43.31:5000//detail/${id}`)
+      .get(`http://100.24.43.31:5000/detail/${id}`)
       .then((response) => {
         setData(response.data); 
       })
@@ -49,7 +49,7 @@ function DetailPage() {
     }
    
     axios
-      .put(`http://100.24.43.31:5000//detail/${id}`, { price: price })
+      .put(`http://100.24.43.31:5000/detail/${id}`, { price: price })
       .then((response) => {
         setData({ ...data, price: price });
         console.log("가격이 업데이트되었습니다.");
@@ -61,9 +61,9 @@ function DetailPage() {
         console.log(data.id)
         console.log(purchaseId)
 
-        return axios.post(`http://100.24.43.31:5000//history`, datas);
+        return axios.post(`http://100.24.43.31:5000/history`, datas);
       // axios
-      //   .post(`http://100.24.43.31:5000//history`, datas)
+      //   .post(`http://100.24.43.31:5000/history`, datas)
       //   .then((response) => {
       //     // setData({ ...data, price: price });
       //     console.log("히스토리 두둥");
