@@ -30,7 +30,7 @@ function MyPage() {
       const userId = localStorage.getItem('userId');
   
       axios
-        .get(`http://100.24.43.31:5000/mypage/myitem?id=${userId}`, {  // 엔드포인트 변경
+        .get(`${process.env.REACT_APP_API_URL}/mypage/myitem?id=${userId}`, {  // 엔드포인트 변경
           headers: {
             'Authorization': `Bearer ${token}`
           }
