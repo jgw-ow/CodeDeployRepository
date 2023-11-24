@@ -14,7 +14,7 @@ function MyPage() {
       const userId = localStorage.getItem('userId');
   
       axios
-        .get(`${process.env.REACT_APP_API_URL}/mypage/buyitem?id=${userId}`, {  // 엔드포인트 변경
+        .get(`http://44.201.125.50:5000/mypage/buyitem?id=${userId}`, {  // 엔드포인트 변경
           headers: {
             'Authorization': `Bearer ${token}`
           }
@@ -30,7 +30,7 @@ function MyPage() {
       const userId = localStorage.getItem('userId');
   
       axios
-        .get(`${process.env.REACT_APP_API_URL}/mypage/myitem?id=${userId}`, {  // 엔드포인트 변경
+        .get(`http://44.201.125.50:5000/mypage/myitem?id=${userId}`, {  // 엔드포인트 변경
           headers: {
             'Authorization': `Bearer ${token}`
           }
