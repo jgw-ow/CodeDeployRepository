@@ -68,7 +68,7 @@ function SignupPage() {
   
         alert(`ID: ${userId}\nPWD1: ${userPwd1}\nPWD2: ${userPwd2}\nPHONE: ${userPhone}\nNICKNAME: ${userNickname}`);
         
-        const response = await fetch(`http://44.201.125.50:5000/login/signup`, {
+        const response = await fetch(`${process.env.REACT_APP_API_URL}/login/signup`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'
