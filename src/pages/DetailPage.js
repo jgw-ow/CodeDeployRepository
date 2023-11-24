@@ -12,7 +12,7 @@ function DetailPage() {
 
   useEffect(() => {
     axios
-      .get(`${process.env.REACT_APP_API_URL}/detail/${id}`)
+      .get(`http://44.201.125.50:5000/detail/${id}`)
       .then((response) => {
         setData(response.data); 
       })
@@ -49,7 +49,7 @@ function DetailPage() {
     }
    
     axios
-      .put(`${process.env.REACT_APP_API_URL}/detail/${id}`, { price: price })
+      .put(`http://44.201.125.50:5000/detail/${id}`, { price: price })
       .then((response) => {
         setData({ ...data, price: price });
         console.log("가격이 업데이트되었습니다.");
