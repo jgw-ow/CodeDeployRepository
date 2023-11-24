@@ -19,7 +19,7 @@ function LoginPage() {
         return;
       } 
 
-      const response = await fetch(`http://44.201.125.50:5000/login`, {
+      const response = await fetch(`${process.env.REACT_APP_API_URL}/login`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
