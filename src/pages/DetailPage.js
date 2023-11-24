@@ -61,7 +61,7 @@ function DetailPage() {
         console.log(data.id)
         console.log(purchaseId)
 
-        return axios.post(`http://100.24.43.31:5000/history`, datas);
+        return axios.post(`http://44.201.125.50:5000/history`, datas);
       // axios
       //   .post(`http://100.24.43.31:5000/history`, datas)
       //   .then((response) => {
