@@ -21,7 +21,7 @@ function MainPage() {
   useEffect(() => {
       const queryString = `sort=${sortMethod}&keyword=${query}`;
       axios
-        .get(`${process.env.REACT_APP_API_URL}?${queryString}`) //Mock데이터로 테스트
+        .get(`http://44.201.125.50:5000?${queryString}`) //Mock데이터로 테스트
         .then((itemData) => {
           console.log(itemData.data)
           setItemDataList(itemData.data);
