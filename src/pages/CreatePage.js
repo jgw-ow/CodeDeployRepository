@@ -91,7 +91,7 @@ function CreatePage() {
   data.append('itemImage', itemImage);
   data.append('userId',userId )
 
-  axios.post(`http://44.201.125.50:5000/create`, data)
+  axios.post(`${process.env.REACT_APP_API_URL}/create`, data)
     .then(response => {
       alert('경매물품이 등록되었습니다.');
       navigate("/");
